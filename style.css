@@ -5,11 +5,17 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
 }
 
 .piano {
     position: relative;
     display: flex;
+    margin-top: 20px;
 }
 
 .key {
@@ -46,4 +52,29 @@ body {
 
 .active {
     background: #3498db !important;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+#sequence-display {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: white;
 }

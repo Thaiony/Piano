@@ -9,12 +9,26 @@
     <div class="container">
         <div id="chord-display"></div>
         <div class="piano">
-            <!-- Teclas brancas -->
-            <div class="key white" data-note="C"></div>
-            <div class="key white" data-note="D"></div>
-            <!-- Teclas pretas posicionadas absolutamente -->
-            <div class="key black" data-note="C#" style="left: 40px"></div>
+            <!-- Teclas do piano de 3 oitavas (C4 a B6) -->
+            <div class="key white" data-note="C4"></div>
+            <div class="key black" data-note="C#4" style="left: 40px;"></div>
+            <div class="key white" data-note="D4"></div>
+            <div class="key black" data-note="D#4" style="left: 120px;"></div>
+            <div class="key white" data-note="E4"></div>
+            <div class="key white" data-note="F4"></div>
+            <div class="key black" data-note="F#4" style="left: 240px;"></div>
+            <div class="key white" data-note="G4"></div>
+            <div class="key black" data-note="G#4" style="left: 320px;"></div>
+            <div class="key white" data-note="A4"></div>
+            <div class="key black" data-note="A#4" style="left: 400px;"></div>
+            <div class="key white" data-note="B4"></div>
+            <!-- Repetir para as outras 2 oitavas -->
         </div>
+        <div class="controls">
+            <button id="record-button">Gravar Sequência</button>
+            <button id="clear-button">Apagar Sequência</button>
+        </div>
+        <div id="sequence-display"></div>
     </div>
     <script src="script.js"></script>
 </body>
