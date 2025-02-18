@@ -1,46 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piano Interativo</title>
+    <title>Piano Interativo para Estudantes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Piano Interativo</h1>
-    <div class="piano">
-        <!-- Primeira oitava (C, C#, D, etc.) -->
-        <div class="key white" data-note="C"></div>
-        <div class="key black" data-note="C#"></div>
-        <div class="key white" data-note="D"></div>
-        <div class="key black" data-note="D#"></div>
-        <div class="key white" data-note="E"></div>
-        <div class="key white" data-note="F"></div>
-        <div class="key black" data-note="F#"></div>
-        <div class="key white" data-note="G"></div>
-        <div class="key black" data-note="G#"></div>
-        <div class="key white" data-note="A"></div>
-        <div class="key black" data-note="A#"></div>
-        <div class="key white" data-note="B"></div>
-        <div class="key white" data-note="C2"></div>
-        
-        <!-- Segunda oitava (C2, C2#, D2, etc.) -->
-        <div class="key white" data-note="C3"></div>
-        <div class="key black" data-note="C#3"></div>
-        <div class="key white" data-note="D3"></div>
-        <div class="key black" data-note="D#3"></div>
-        <div class="key white" data-note="E3"></div>
-        <div class="key white" data-note="F3"></div>
-        <div class="key black" data-note="F#3"></div>
-        <div class="key white" data-note="G3"></div>
-        <div class="key black" data-note="G#3"></div>
-        <div class="key white" data-note="A3"></div>
-        <div class="key black" data-note="A#3"></div>
-        <div class="key white" data-note="B3"></div>
-        <div class="key white" data-note="C4"></div>
+    <div class="container">
+        <div id="chord-display"></div>
+        <div class="piano">
+            <!-- Teclas brancas -->
+            <div class="key white" data-note="C"></div>
+            <div class="key white" data-note="D"></div>
+            <!-- Teclas pretas posicionadas absolutamente -->
+            <div class="key black" data-note="C#" style="left: 40px"></div>
+        </div>
     </div>
-    <div id="chord-display" class="chord-display">Acorde: </div>
-
     <script src="script.js"></script>
 </body>
 </html>

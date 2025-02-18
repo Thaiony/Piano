@@ -1,51 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-
-.piano {
+    background: #2c3e50;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.piano {
     position: relative;
-    margin-bottom: 20px;
+    display: flex;
 }
 
 .key {
     cursor: pointer;
-    transition: background-color 0.1s;
+    transition: background 0.3s;
 }
 
 .white {
     width: 60px;
-    height: 250px;
-    background-color: white;
+    height: 200px;
+    background: #fff;
     border: 1px solid #000;
-    position: relative;
-    z-index: 1;
 }
 
 .black {
     width: 40px;
-    height: 180px;
-    background-color: black;
+    height: 120px;
+    background: #000;
     position: absolute;
-    z-index: 2;
-    margin-left: -20px;
-    margin-right: -20px;
+    top: 0;
+    z-index: 1;
 }
 
-.key:active {
-    background-color: #ddd;
+#chord-display {
+    position: fixed;
+    top: 20px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    display: none;
 }
 
-.chord-display {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    background-color: #f5f5f5;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.active {
+    background: #3498db !important;
 }
