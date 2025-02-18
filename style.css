@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.piano {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.key {
+    width: 50px;
+    height: 200px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    width: 30px;
+    height: 140px;
+    background-color: black;
+    position: relative;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.key:active {
+    background-color: #ddd;
+}
+
+.chord-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
